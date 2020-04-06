@@ -1,13 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--ハンバーガーメニュー-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+
+    <!--Webアイコンフォント-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>my_portfolio</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+        type="text/javascript"></script>
 </head>
+
 <body>
-   <div class="wrapper">
-       <h1>test</h1>
-   </div>
+    <div class="wrap">
+
+        <!--ヘッダー-->
+        <header id="luxbar" class="luxbar-fixed">
+            <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+            <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-cyan">
+                <ul class="luxbar-navigation">
+                    <li class="luxbar-header">
+                        <a href="#" class="luxbar-brand"><i class="far fa-address-card">転職活動用ポートフォリオ</i></a>
+                        <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger"
+                            for="luxbar-checkbox"> <span></span> </label>
+                    </li>
+                    <li class="luxbar-item"><a href="#self_introduction">自己紹介</a></li>
+                    <li class="luxbar-item"><a href="#career">経歴</a></li>
+                    <li class="luxbar-item"><a href="#qualification">資格</a></li>
+                    <li class="luxbar-item"><a href="#skill_tool">スキル・ツール</a></li>
+                    <li class="luxbar-item"><a href="#deliverables">成果物</a></li>
+                    <li class="luxbar-item"><a href="#sns_contact">SNSや連絡先</a></li>
+
+                </ul>
+            </div>
+        </header>
+
+        <!--メイン-->
+        <main>
+            <section id="introduction">
+                <p>この度は私のポートフォリオをご覧いただきありがとうございます。</p>
+
+                <p></p>
+
+            </section>
+            <section id="outline">
+                <h1>ポートフォリオの項目</h1>
+                <p style="text-decoration: underline;">※ヘッダーから各項目にジャンプできます。</p>
+                <ol>
+                    <li>自己紹介</li>
+                    <li>経歴</li>
+                    <li>資格</li>
+                    <li>スキル・ツール</li>
+                    <li>成果物</li>
+                    <li>SNSや連絡先</li>
+
+                </ol>
+
+            </section>
+            <section id="self_introduction" name="self_introduction">
+                <h2>1.自己紹介</h2>
+                <p><span class="emphasis">年齢</span>:27</p>
+                <p><span class="emphasis">性別</span>:男</p>
+                <p><span class="emphasis">家族</span>:妻、子1人</p>
+                <p><span class="emphasis">居住歴</span>:東京(～2019/07) → 札幌(～2020/03) → 新潟市中央区(～現在)</p>
+                <div class="hobby">
+                    <p><span class="emphasis">趣味</span>:DIY(インテリア)、料理、カメラ、プロレス観戦</p>
+                    <p>DIYは販売もしており、最高年商80万円</p>
+                    <p>【販売サイト】</p>
+                    <p>Creema:<a href="https://www.creema.jp/c/blend_in_with"
+                            target=”_blank”>https://www.creema.jp/c/blend_in_with</a></p>
+                            
+                    <p>minne:<a href="https://minne.com/@korirakmama" target=”_blank”>https://minne.com/@korirakmama</a>
+                    </p>
+                </div>
+            </section>
+            <section id="career" name="career">
+                <h2>2.経歴</h2>
+                <table border="1">
+                    <tr>
+                        <th>年月</th>
+                        <th>経歴内容</th>
+                    </tr>
+                    <tr>
+                        <td>2011/03</td>
+                        <td>
+                            <p>私立錦城高等学校 卒業</p>
+                            <p>軽音楽部所属</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2015/03</td>
+                        <td>
+                            <p>国学院大学経済学部経済ネットワーキング学科 卒業</p>
+                            <p>軽音楽サークル所属</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2015/04</td>
+                        <td>
+                            <p>医療機器メーカー 入社</p>
+                            <p>ガラス製医療機器を手加工で製造するガラス職人業に従事する</p>
+                            <p>入社1年目で社内唯一の直属の上司が退職してしまい、全ての業務を1人で行うこととなった</p>
+                            <p>苦しかった経験だが<span class="emphasis">「自走力」・「調べる力」・「トラブルシューティング能力」
+                            </span>を身に付けられ、</p>
+                            <p>プログラミングの学習の際には大きく役立った</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2019/06</td>
+                        <td>上記医療機器メーカー 退職</td>
+                    </tr>
+                    <tr>
+                        <td>2019/07</td>
+                        <td>子育て環境を考え妊娠中の妻と共に東京から札幌へ移住</td>
+                    </tr>
+                    <tr>
+                        <td>2019/09～2020/03</td>
+                        <td>
+                            <p>法人向け研修サービスを展開する<a href="https://gkij.net/" target="_blank">株式会社GKI</a>にて公共職業訓練を受講</p>
+                            <p>計520時間の講義の中でJavaを中心に、HTML、CSS、データベースを学習し</p>
+                            <p>WEBアプリケーション（掲示板アプリ）の作成までを行った</p>
+                            <p>また、プライベートの時間のほとんどをプログラミングに注いだ</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2019/03</td>
+                        <td>家庭の事情により妻の出身県である新潟県へ移住</td>
+                    </tr>
+
+
+
+                </table>
+            </section>
+            <section id="qualification" name="qualification">
+                <h2>3.資格</h2>
+                <table border="1">
+                    <tr>
+                        <th>取得年月</th>
+                        <th>資格名</th>
+                    </tr>
+                    <tr>
+                        <td>2015/02</td>
+                        <td>普通自動車第一種運転免許（AT)</td>
+
+                    </tr>
+                    <tr>
+                        <td>2018/10</td>
+                        <td>Microsoft Office Specialist Excel 2013</td>
+                    </tr>
+                    <tr>
+                        <td>2019/02</td>
+                        <td>第一種衛生管理者</td>
+                    </tr>
+                    <tr>
+                        <td>2020/02</td>
+                        <td>
+                            <div class="emphasis">Oracle Certified Java Programmer (Java SE8 Silver)</div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="skill_tool" name="skill_tool">
+                <h2>4.スキル・ツール</h2>
+                <div class="prgrm_language">
+                    <div class="Java">
+                        <img src="https://cdn.svgporn.com/logos/java.svg">
+                        <h3>Java</h3>
+                        <p>基礎文法を理解し、JSPやServletを使いMVCモデルに沿う形で開発することができる。 </p>
+                    </div>
+                    <div class="HTML">
+                        <img src="https://cdn.svgporn.com/logos/html-5.svg">
+                        <h3>HTML</h3>
+                        <p>調べながら自力でコーディングできる。</p>
+                    </div>
+                    <div class="CSS">
+                        <img src="https://cdn.svgporn.com/logos/css-3.svg">
+                        <h3>CSS</h3>
+                        <p>調べながら自力でコーディングできる。</p>
+                    </div>
+                    <div class="MySQL">
+                        <img src="https://cdn.svgporn.com/logos/mysql.svg">
+                        <h3>MySQL</h3>
+                        <p>SELECT、INSERT、UPDATE、DELETEなど基本的な構文からテーブル結合(INNER JOIN）、並び替え（ORDER BY）などの構文まで扱うことができる。</p>
+                    </div>
+                    <div class="eclipse">
+                        <img src="https://cdn.svgporn.com/logos/eclipse.svg">
+                        <h3>eclipse</h3>
+                        <p>職業訓練受講時や自宅でJavaを書く際に用いた。</p>
+                        <p>基本的なショートカットは扱うことができる。</p>
+                        <p>成果物のWEBアプリ作成の際はeclipseからGitHubへのコミットを行った。</p>
+                    </div>
+                    <div class="vscode">
+                        <img src="https://cdn.svgporn.com/logos/visual-studio-code.svg">
+                        <h3>vscode</h3>
+                        <p>自宅にてHTML,CSSを書くときに使用。</p>
+                        <p>今回のポートフォリオ作成時に用いた。</p>
+                    </div>
+                    <div class="Git">
+                        <img src="https://cdn.svgporn.com/logos/git-icon.svg">
+                        <h3>Git</h3>
+                        <p>職業訓練で作成したWEBアプリのソースをGitHubにプッシュし、またWEB上で公開するため独学で学習。</p>
+                        <p>調べながらadd,commt,pushなど行えるが、現在学習中。</p>
+                    </div>
+                </div>
+            </section>
+            <section id="deliverables" name="deliverables">
+                <h2>5.成果物</h2>
+                <p>Java(JSP,Servlet)で作成した掲示板アプリ<br>
+                    →リンク:<a href="https://fathomless-spire-50882.herokuapp.com/"
+                        target=”_blank”>https://fathomless-spire-50882.herokuapp.com/</a>
+                </p>
+                <p>概要はリポジトリのREADMEに記載<br>
+                    →リンク:<a href="https://github.com/hori1121/BbsApp/blob/master/README.md" target=”_blank”>
+                        https://github.com/hori1121/BbsApp/blob/master/README.md</a></p>
+                <p>【参考画像　※画像クリックで拡大】</p>
+                <a href="https://user-images.githubusercontent.com/61927393/77175597-3ae0ac80-6b06-11ea-81db-d3c69f1393b3.png"
+                    data-lightbox="group">
+                    <img src="https://user-images.githubusercontent.com/61927393/77175597-3ae0ac80-6b06-11ea-81db-d3c69f1393b3.png"
+                        width="300"></a>
+                <a href="https://user-images.githubusercontent.com/61927393/77176432-7334ba80-6b07-11ea-9815-6c67c17751b9.png"
+                    data-lightbox="group">
+                    <img src="https://user-images.githubusercontent.com/61927393/77176432-7334ba80-6b07-11ea-9815-6c67c17751b9.png"
+                        width="300"></a>
+                <a href="https://user-images.githubusercontent.com/61927393/77176451-7af45f00-6b07-11ea-8309-fa64f594f71c.png"
+                    data-lightbox="group">
+                    <img src="https://user-images.githubusercontent.com/61927393/77176451-7af45f00-6b07-11ea-8309-fa64f594f71c.png"
+                        width="300"></a>
+            </section>
+            <section id="sns_contact" name="sns_contact">
+                <h2>6.連絡先,GitHub</h2>
+                <div class="sns_contact_flexbox">
+                    <div class="gmail">
+                        <a href="mailto:n.hori1121@gmail.com"><img
+                                src="https://cdn.svgporn.com/logos/google-gmail.svg"></a>
+                        <p>Gmail</p>
+                    </div>
+                    <div class="twitter">
+                        <a href="https://twitter.com/horihorina" target=”_blank”> <img
+                                src="https://cdn.svgporn.com/logos/twitter.svg"></a>
+                        <p>Twitter @horihorina</p>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/hori1121" target=”_blank”><img
+                                src="https://cdn.svgporn.com/logos/github-icon.svg"></a>
+                        <p>GitHub</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!--フッター-->
+        <footer>
+            <p>&copy;2020 Hori All Rights Reserved.</p>
+        </footer>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+html {
+    scroll-padding-top: 70px; /* 固定ヘッダの高さ分 */
+    width:100%;
+}
+body{
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 20px;
+    width:99%;
+    text-align: center;
+}
+.wrap{
+    overflow: hidden;
+}
+main{
+    padding-top: 60px;
+}
+header{
+    width:780px;
+    background-color: black;
+}
+#outline,#self_introduction,#career,#qualification,#skill_tool,#deliverables,#sns_contact{
+    border-bottom: solid 1px silver;
+    padding-bottom: 30px;
+}
+.fa-address-card:before {
+    font-family: FontAwesome;
+    content: '\f0f4';
+    color: white;
+    font-size: 24px;
+    padding:0px 10px;
+}
+#outline ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#career table,#qualification table{
+    margin: 0 auto;
+}
+
+#skill_tool img{
+    width:20%;
+}
+#deliverables img{
+    width:25%;
+}
+#sns_contact{
+    width:100%;
+}
+.sns_contact_flexbox{
+    display: flex;
+    justify-content: center;
+}
+#sns_contact img{
+    width:30%;
+    margin:20px;
+}
+.gmail,.twitter,.github{
+    border:solid 1px black;
+    border-radius:10px;
+    width:20%;
+    margin: 10px;
+}
+.gmail:hover,.twitter:hover,.github:hover{
+    background-color: rgba(240,240, 240, 1.0);
+}
+.gmail a,.twitter a,.github a{
+    display: block;
+}
+.Java,.HTML,.CSS,.MySQL,.eclipse,.vscode,.Git{
+    width:30%;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+.prgrm_language{
+    display: flex;
+    margin: 0 auto;
+    width:70%;
+    flex-wrap:wrap;
+    justify-content: center;  
+}
+.emphasis{
+    font-weight: bold;
+}
+footer{
+    text-align: right;
+}
+
+/*タブレット用の設定*/
+@media screen and (max-width:1024px) {
+   
+    body{
+        width:98%;
+        font-size: 24px;
+    }
+    .luxbar-item{
+        font-size: 10px;
+    }
+    .fa-address-card{
+        font-size: 4px;
+    }
+    #self_introduction p{
+        font-size: 18px;
+    }
+    #self_introduction a{
+        font-size: 12px;
+    }
+    .prgrm_language{
+        display: flex;
+        margin: 0 auto;
+        width:100%;
+        flex-wrap:wrap;
+        justify-content: center;  
+    }
+    .Java,.HTML,.CSS,.MySQL,.eclipse,.vscode,.Git{
+        width:80%;
+        border: solid 1px black;
+        border-radius: 5px;
+        padding: 2px;
+        margin:15px 8px 0 0;
+    }
+    #career table,#qualification table{
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    #deliverables a{
+        font-size: 12px;
+    }
+    .gmail,.twitter,.github{
+        border:solid 1px black;
+        border-radius:10px;
+        width:32%;
+        margin: 0 10px;
+    }
+}
+
+/*スマホ用の設定*/
+@media screen and (max-width:480px) {
+    body{
+        font-size: 16px;
+    }
+    .fa-address-card{
+        font-size: 16px;
+    }
+    #self_introduction p{
+        font-size: 15px;
+    }
+    #self_introduction a{
+        font-size: 12px;
+    }
+    .prgrm_language{
+        display: flex;
+        margin: 0 auto;
+        width:100%;
+        flex-wrap:wrap;
+        justify-content: center;  
+    }
+    .Java,.HTML,.CSS,.MySQL,.eclipse,.vscode,.Git{
+        width:100%;
+        border: solid 1px black;
+        border-radius: 5px;
+        padding: 2px;
+        margin:5px 8px 0 0;
+    }
+    #career table,#qualification table{
+        margin: 0 8px 0 0;
+        width: 100%;
+    }
+    #deliverables a{
+        font-size: 12px;
+    }
+    .gmail,.twitter,.github{
+        border:solid 1px black;
+        border-radius:10px;
+        width:32%;
+        margin: 0 10px;
+    }
+
+}
+
