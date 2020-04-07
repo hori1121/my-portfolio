@@ -58,20 +58,22 @@ header{
 }
 #sns_contact img{
     width:30%;
-    margin:20px;
-}
-.gmail,.twitter,.github{
+    padding:30px;
     border:solid 1px black;
     border-radius:10px;
+}
+#sns_contact ul{
+    list-style: none;
+}
+.gmail,.twitter,.github{
     width:20%;
     margin: 10px;
 }
-.gmail:hover,.twitter:hover,.github:hover{
+#sns_contact img:hover{
     background-color: rgba(240,240, 240, 1.0);
 }
-.gmail a,.twitter a,.github a{
-    display: block;
-}
+
+
 .Java,.HTML,.CSS,.MySQL,.eclipse,.vscode,.Git{
     width:30%;
     border: solid 1px black;
@@ -135,8 +137,6 @@ footer{
         font-size: 12px;
     }
     .gmail,.twitter,.github{
-        border:solid 1px black;
-        border-radius:10px;
         width:32%;
         margin: 0 10px;
     }
@@ -178,8 +178,6 @@ footer{
         font-size: 12px;
     }
     .gmail,.twitter,.github{
-        border:solid 1px black;
-        border-radius:10px;
         width:32%;
         margin: 0 10px;
     }
