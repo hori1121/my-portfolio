@@ -130,8 +130,10 @@ footer{
     }
     #career table,#qualification table{
         width: 90%;
-        margin: 0 auto;
-        
+        margin: 0 auto;  
+    }
+    .sns_contact_flexbox{
+        padding:0;
     }
     #deliverables a{
         font-size: 12px;
@@ -171,16 +173,26 @@ footer{
         margin:5px 8px 0 0;
     }
     #career table,#qualification table{
-        margin: 0 8px 0 0;
+        margin: 0 16px 0 0;
         width: 100%;
     }
     #deliverables a{
         font-size: 12px;
     }
     .gmail,.twitter,.github{
-        width:32%;
-        margin: 0 10px;
+        width:30%;
     }
-
+    #sns_contact img{
+        width:30%;
+        padding:20px;
+        border:solid 1px black;
+        border-radius:10px;
+    }
+    .sns_contact_flexbox{
+        padding:0;
+    }
+    .luxbar-item{
+        font-size: 18px;
+    }
 }
 
