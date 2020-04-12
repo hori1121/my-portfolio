@@ -37,7 +37,20 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+}
+#self_introduction img{
+    width:300px;
+    border-radius: 50%;
+}
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+th, td{
+    border:solid 2px gray;
+}
+th {
+    background-color:cadetblue;
 }
 #career table,#qualification table{
     margin: 0 auto;
@@ -72,8 +85,6 @@ header{
 #sns_contact img:hover{
     background-color: rgba(240,240, 240, 1.0);
 }
-
-
 .Java,.HTML,.CSS,.MySQL,.eclipse,.vscode,.Git{
     width:30%;
     border: solid 1px black;
